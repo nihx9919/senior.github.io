@@ -221,6 +221,116 @@
   </div>
 </section>
 
+<!-- Experiment Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <!-- 主标题 -->
+        <h2 class="title is-3 has-text-centered">Experiment</h2>
+
+        <!-- ===== 仿真实验部分 ===== -->
+        <h3 class="title is-4 has-text-left">Simulated Experiments</h3>
+        <div class="content has-text-justified">
+          <p>
+            We compare our method (SENIOR) with five baseline methods on six complex robot manipulation tasks in Meta-World, including Door Lock, Window Close, Handle Press, Window Open, Door Open and Door Unlock. PbRL methods include PEBBLE, MRN, RUNE, M-RUNE(RUNE with MRN), QPA, P-SENIOR(PEBBLE with SENIOR) and M-SENIOR(MRN with SENIOR).
+          </p>
+        </div>
+        <div class="columns is-multiline is-centered">
+        <!-- 第一行 -->
+        <div class="column is-one-third has-text-centered">
+          <video controls muted playsinline loop style="width: 100%; height: auto;">
+            <source src="./static/videos/sim_door_lock_html.mp4" type="video/mp4">
+          </video>
+          <p><strong>Door Lock (feedback=250)</strong></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video controls muted playsinline loop style="width: 100%; height: auto;">
+            <source src="./static/videos/sim_window_close_html.mp4" type="video/mp4">
+          </video>
+          <p><strong>Window Close (feedback=250)</strong></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video controls muted playsinline loop style="width: 100%; height: auto;">
+            <source src="./static/videos/sim_handle_press_html.mp4" type="video/mp4">
+          </video>
+          <p><strong>Handle Press (feedback=250)</strong></p>
+        </div>
+
+        <!-- 第二行 -->
+        <div class="column is-one-third has-text-centered">
+          <video controls muted playsinline loop style="width: 100%; height: auto;">
+            <source src="./static/videos/sim_window_open_html.mp4" type="video/mp4">
+          </video>
+          <p><strong>Window Open (feedback=250)</strong></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video controls muted playsinline loop style="width: 100%; height: auto;">
+            <source src="./static/videos/sim_door_open_html.mp4" type="video/mp4">
+          </video>
+          <p><strong>Door Open (feedback=1000)</strong></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video controls muted playsinline loop style="width: 100%; height: auto;">
+            <source src="./static/videos/sim_door_unlock_html.mp4" type="video/mp4">
+          </video>
+          <p><strong>Door Unlock (feedback=1000)</strong></p>
+        </div>
+      </div>
+
+        <div class="content has-text-centered">
+          <img src="./static/images/sim_curves.png" style="max-width: 75%; height: auto;">
+          <p><strong>Figure 2:</strong> Learning curves on six robotic manipulation tasks as measured by success rate. The solid line and shaded regions represent the mean and standard deviation, respectively, across five runs. </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/sim_table.png" style="max-width: 75%; height: auto;">
+          <p><strong>Figure 3:</strong>Comparison of success rates for six tasks at 500K and 1000K steps. </p>
+        </div>
+        
+
+        <!-- ===== 实体实验部分 ===== -->
+        <h3 class="title is-4 has-text-left">Real-World Experiments</h3>
+        <div class="content has-text-justified">
+          <p>
+            We also compare our method (SENIOR) with five baseline methods on four complex robot manipulation tasks in the real world, including Door Open, Door Close, Box Open and Box Close. PbRL methods include PEBBLE, MRN, RUNE, M-RUNE(RUNE with MRN), QPA and M-SENIOR(MRN with SENIOR).
+          </p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video controls muted playsinline loop style="width: 100%; height: auto;">
+            <source src="./static/videos/real_door_open_html.mp4" type="video/mp4">
+          </video>
+          <p><strong>Door Open (feedback=1000)</strong></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video controls muted playsinline loop style="width: 100%; height: auto;">
+            <source src="./static/videos/real_door_close_html.mp4" type="video/mp4">
+          </video>
+          <p><strong>Door Close (feedback=50)</strong></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video controls muted playsinline loop style="width: 100%; height: auto;">
+            <source src="./static/videos/real_box_open_html.mp4" type="video/mp4">
+          </video>
+          <p><strong>Box Open (feedback=250)</strong></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video controls muted playsinline loop style="width: 100%; height: auto;">
+            <source src="./static/videos/real_box_close_html.mp4" type="video/mp4">
+          </video>
+          <p><strong>Box Close (feedback=250)</strong></p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/real_table.png" style="max-width: 75%; height: auto;">
+          <p><strong>Figure 4:</strong> Success rate of simulation and real experiments on four tasks. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Experiment Section -->
+
+
+
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
